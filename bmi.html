@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .calculator {
+            width: 300px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>HEALTH FIT GO</a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="">HEALTH</a>
+                  <ul>
+                    <li><a href="wihealth.html">What is health?</a></li>
+                    <li><a href="heallife.html">How to Live Healthy Life?</a></li>
+                  </ul>
+                </li>
+                <li><a href="">PROTECTION</a>
+                    <ul>
+                        <li><a href="fa.html">First Aid</a></li>
+                        <li><a href="mk.html">Mask</a></li>
+                        <li><a href="prot.html">Vaccination</a></li>
+                    </ul>
+                </li>
+                <li><a href="">TEST YOUR HEALTH</a>
+                    <ul>
+                        <li><a href="bmi.html">Physical Health</a></li>
+                        <li><a href="mh.html">Mental Health</a></li>
+                      </ul>
+                </li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <center>
+     <div class="calculator">
+        <h2>BMI Calculator</h2>
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter weight" required>
+        
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter height" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter age" required>
+        
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        
+        <p><strong>BMI Result:</strong> <span id="result"></span></p>
+
+        <h3>BMI Classification</h3>
+        <p>If your BMI is:</p>
+        <ul>
+          <li>Below 18.5 <br>– you're in the underweight range.</li>
+          <li>Between 18.5 and 24.9 <br>– you're in the healthy weight range.</li>
+          <li>Between 25 and 29.9 <br>– you're in the overweight range.</li>
+          <li>Between 30 and 39.9 <br>– you're in the obese range.</li>
+          <li>Above 40 <br>– you're extremely obese.</li>
+     </div>
+     <img src="BMI.jpg">
+    </center>
+
+    <script src="main.js"></script>
+</body>
+</html>
