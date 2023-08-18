@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <script src="main.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,6 +23,12 @@
 </head>
 
 <body>
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+               }
+    </style>
 
     <nav class="navbar-inverse my_nav_bar">
         <div class="navbar-header">
@@ -61,28 +68,29 @@
 
     </nav>
 
-    <h1>&nbsp;&nbsp;Contact Us</h1>
+    <h1 class="hfp">&nbsp;&nbsp;Contact Us</h1>
 
-    <h3>&nbsp;&nbsp;&nbsp;&nbsp;Delhi Public School, Sector-122, NOIDA</h3>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;Health Fit Go HQ, Sector-122, NOIDA</h3>
 
     <div class="contact_1 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <a href="mailto:school@gmail.com?Subject=Hi">
-            <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;dps122@gmail.com</h5>
-            <h5><i class="fa fa-phone"></i>&nbsp;&nbsp;dps122@gmail.com</h5>
+            <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;healthfitgo@gmail.com</h5>
+            <h5><i class="fa fa-phone"></i>&nbsp;&nbsp;812187337X</h5>
             
         </a>
 
     <div class="contact_2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <form>
 
             <h4>Submit your query here</h4>
-            <span>Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" required></span>
+            <span>Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="name" name="name" required></span>
             <br><br>
-            <span>Comment : &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" required></span>
+            <span>Query : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" id="comment" required></span>
             <br><br>
-            <input type="submit" value="Submit" class="btn btn-success">
-        </form>
+            <button type="button" onclick="submitButton()" class="btn btn-success">Submit</button>
+            <h4 id="sar"></h4>
+        <div class="popup" id="popup">
+            <p>Thank you for submitting Your Query</p>
+            <button onclick="closePopup()" id="closePopup">Close</button>
+        </div>
     </div>
-
 </body>
 </html>

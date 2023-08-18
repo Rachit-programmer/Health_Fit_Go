@@ -73,3 +73,46 @@ li:hover a{
     font-size: large;
     margin-left: -40px;
 }
+
+#atceo {
+    width: 100%;
+    background-color: #85e4ff;
+    height: 250px;
+    border-radius: 150px;
+}
+
+#ceop {
+    background-color: aliceblue;
+    border-radius: 40px;   
+    width: 30%; 
+    height: 200px;
+    margin-top: 25px;
+}
+
+#aah {
+    margin-top: 100px;
+    margin-left: 250px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+#gpic {
+    margin-top: 7px;
+    border-radius: 70px;
+}
+
+#myname {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.ahfg {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.hfp {
+    font-family: cursive;
+}
